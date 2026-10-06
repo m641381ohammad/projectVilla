@@ -1,0 +1,177 @@
+   /* کارت اصلی */
+   /* .terms-card {
+       max-width: 550px;
+       width: 100%;
+       background: white;
+       border-radius: 28px;
+       box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+       overflow: hidden;
+   } */
+
+   .card-header {
+       padding: 22px 26px;
+       border-bottom: 1px solid #eef2f8;
+       background: white;
+   }
+
+   .card-header h3 {
+       font-size: 20px;
+       font-weight: 700;
+       color: #1e2a3e;
+       margin: 0;
+       display: flex;
+       align-items: center;
+       gap: 10px;
+   }
+
+   .card-header h3 i {
+       color: #717DFF;
+   }
+
+   /* محتوای قوانین */
+
+   .terms-content {
+       padding: 20px 26px;
+   }
+
+   .terms-text {
+       background: #f8f9fc;
+       border-radius: 20px;
+       padding: 20px;
+       margin-bottom: 24px;
+       border: 1px solid #eef2f8;
+       max-height: 250px;
+       overflow-y: auto;
+   }
+
+   .terms-text p {
+       font-size: 14px;
+       line-height: 1.7;
+       color: #2c3e50;
+       margin-bottom: 15px;
+   }
+
+   .terms-text p:last-child {
+       margin-bottom: 0;
+   }
+
+   .terms-text ul {
+       padding-right: 20px;
+       margin-bottom: 15px;
+   }
+
+   .terms-text li {
+       font-size: 14px;
+       line-height: 1.7;
+       color: #2c3e50;
+       margin-bottom: 6px;
+   }
+
+   /* خط جداکننده */
+
+   .divider {
+       height: 1px;
+       background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+       margin: 20px 0;
+   }
+
+   /* بخش تأیید */
+
+   .accept-section {
+       display: flex;
+       align-items: center;
+       gap: 12px;
+       flex-wrap: wrap;
+       padding: 16px 0 8px 0;
+   }
+
+   .accept-checkbox {
+       width: 22px;
+       height: 22px;
+       cursor: pointer;
+       accent-color: #717DFF;
+   }
+
+   .accept-label {
+       font-size: 15px;
+       color: #2c3e50;
+       cursor: pointer;
+       user-select: none;
+   }
+
+   .accept-label a {
+       color: #717DFF;
+       text-decoration: none;
+       font-weight: 500;
+   }
+
+   .accept-label a:hover {
+       text-decoration: underline;
+   }
+
+   /* دکمه تأیید */
+
+   .confirm-btn {
+       width: 100%;
+       margin-top: 24px;
+       padding: 14px;
+       background: linear-gradient(135deg, #717DFF 0%, #5a67d8 100%);
+       border: none;
+       border-radius: 50px;
+       color: white;
+       font-size: 16px;
+       font-weight: 600;
+       cursor: pointer;
+       transition: all 0.3s;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 10px;
+   }
+
+   .confirm-btn:hover:not(:disabled) {
+       transform: translateY(-2px);
+       box-shadow: 0 8px 25px rgba(113, 125, 255, 0.35);
+   }
+
+   .confirm-btn:disabled {
+       background: #cbd5e1;
+       cursor: not-allowed;
+       transform: none;
+       box-shadow: none;
+   }
+
+   /* ریسپانسیو */
+
+   @media (max-width: 480px) {
+       .card-header {
+           padding: 18px 20px;
+       }
+
+       .card-header h3 {
+           font-size: 18px;
+       }
+
+       .terms-content {
+           padding: 16px 20px;
+       }
+
+       .terms-text {
+           padding: 16px;
+           max-height: 200px;
+       }
+
+       .terms-text p,
+       .terms-text li {
+           font-size: 12px;
+       }
+
+       .accept-label {
+           font-size: 13px;
+       }
+
+       .confirm-btn {
+           padding: 12px;
+           font-size: 14px;
+       }
+   }

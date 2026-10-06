@@ -1,0 +1,261 @@
+ /* کارت اصلی */
+
+ .cancellation-card {
+     max-width: 750px;
+     width: 100%;
+     background: white;
+     border-radius: 32px;
+     box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+     overflow: hidden;
+ }
+
+ .card-header {
+     padding: 24px 28px;
+     border-bottom: 1px solid #eef2f8;
+     background: white;
+ }
+
+ .card-header h3 {
+     font-size: 22px;
+     font-weight: 700;
+     color: #1e2a3e;
+     margin: 0;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .card-header h3 i {
+     color: #717DFF;
+ }
+
+ .card-header p {
+     font-size: 14px;
+     color: #5b6e8c;
+     margin-top: 10px;
+     line-height: 1.6;
+ }
+
+ /* لیست سیاست‌ها */
+
+ .policies-list {
+     padding: 20px 28px;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+ }
+
+ /* هر سیاست */
+
+ .policy-item {
+     border: 2px solid #eef2f8;
+     border-radius: 24px;
+     padding: 20px;
+     transition: all 0.3s ease;
+     cursor: pointer;
+     background: white;
+     position: relative;
+ }
+
+ .policy-item:hover {
+     border-color: #cbd5e1;
+     background: #fafcff;
+ }
+
+ .policy-item.selected {
+     border-color: #717DFF;
+     background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+     box-shadow: 0 4px 15px rgba(113, 125, 255, 0.15);
+ }
+
+ .policy-item.selected::before {
+     content: "✓";
+     position: absolute;
+     top: 20px;
+     left: 20px;
+     width: 28px;
+     height: 28px;
+     background: #717DFF;
+     color: white;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 16px;
+     font-weight: bold;
+ }
+
+ /* هدر هر سیاست */
+
+ .policy-header {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+     margin-bottom: 16px;
+     flex-wrap: wrap;
+ }
+
+ .policy-radio {
+     width: 22px;
+     height: 22px;
+     accent-color: #717DFF;
+     cursor: pointer;
+ }
+
+ .policy-title {
+     font-size: 18px;
+     font-weight: 700;
+     color: #1e2a3e;
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     flex-wrap: wrap;
+ }
+
+ .policy-title i {
+     font-size: 20px;
+ }
+
+ .recommended-badge {
+     background: linear-gradient(135deg, #27ae60, #219a52);
+     color: white;
+     font-size: 11px;
+     font-weight: 600;
+     padding: 4px 12px;
+     border-radius: 50px;
+     margin-right: 10px;
+ }
+
+ .warning-badge {
+     background: #e74c3c;
+     color: white;
+     font-size: 11px;
+     font-weight: 600;
+     padding: 4px 12px;
+     border-radius: 50px;
+     margin-right: 10px;
+ }
+
+ /* توضیحات */
+
+ .policy-description {
+     font-size: 14px;
+     color: #4a5b7a;
+     line-height: 1.65;
+     margin-top: 12px;
+     padding-right: 34px;
+ }
+
+ .policy-description ul {
+     margin-top: 8px;
+     padding-right: 20px;
+ }
+
+ .policy-description li {
+     margin-bottom: 6px;
+ }
+
+ .policy-description i {
+     margin-left: 6px;
+ }
+
+ .highlight {
+     color: #717DFF;
+     font-weight: 600;
+ }
+
+ /* دکمه تایید */
+
+ .confirm-btn {
+     width: calc(100% - 56px);
+     margin: 10px 28px 28px 28px;
+     padding: 16px;
+     background: linear-gradient(135deg, #717DFF 0%, #5a67d8 100%);
+     border: none;
+     border-radius: 60px;
+     color: white;
+     font-size: 16px;
+     font-weight: 600;
+     cursor: pointer;
+     transition: all 0.3s;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+ }
+
+ .confirm-btn:hover {
+     transform: translateY(-2px);
+     box-shadow: 0 8px 25px rgba(113, 125, 255, 0.35);
+ }
+
+ /* ========== ریسپانسیو ========== */
+
+ @media (max-width: 600px) {
+     .card-header {
+         padding: 18px 20px;
+     }
+
+     .card-header h3 {
+         font-size: 18px;
+     }
+
+     .card-header p {
+         font-size: 12px;
+     }
+
+     .policies-list {
+         padding: 16px 20px;
+         gap: 16px;
+     }
+
+     .policy-item {
+         padding: 16px;
+     }
+
+     .policy-title {
+         font-size: 16px;
+     }
+
+     .policy-description {
+         font-size: 12px;
+         padding-right: 0;
+         margin-top: 12px;
+     }
+
+     .policy-item.selected::before {
+         top: 16px;
+         left: 16px;
+         width: 24px;
+         height: 24px;
+         font-size: 14px;
+     }
+
+     .confirm-btn {
+         width: calc(100% - 40px);
+         margin: 10px 20px 24px 20px;
+         padding: 14px;
+         font-size: 14px;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .policy-header {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+
+     .policy-radio {
+         position: absolute;
+         top: 16px;
+         left: 16px;
+     }
+
+     .policy-title {
+         padding-left: 40px;
+     }
+
+     .policy-description {
+         padding-right: 0;
+     }
+ }

@@ -1,0 +1,102 @@
+.card-header-custom {
+    padding: 20px 24px;
+    border-bottom: 1px solid #eef2f8;
+}
+
+.card-header-custom h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: #1e2a3e;
+}
+
+.amenities-container {
+    padding: 16px 20px;
+    max-height: 550px;
+}
+
+.amenity-item {
+    padding: 14px 0;
+    border-bottom: 1px solid #eef2f8;
+}
+
+.amenity-item:last-child {
+    border-bottom: none;
+}
+
+.amenity-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.amenity-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.amenity-info label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2c3e50;
+    margin: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    accent-color: #717DFF !important;
+    transition: .4s;
+}
+
+.checkmark:hover {
+    accent-color: #7580fd !important;
+}
+
+.description-input {
+    margin-top: 12px;
+    padding-right: 34px;
+    animation: fadeIn 0.3s ease;
+}
+
+.description-input input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    font-size: 13px;
+    background: #f8f9fc;
+    transition: 0.2s;
+}
+
+.description-input input:focus {
+    border-color: #717DFF;
+    outline: none;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+.example-note {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 5px;
+    padding-right: 34px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

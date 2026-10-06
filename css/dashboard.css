@@ -1,0 +1,382 @@
+:root {
+    --primary: #e53e3e;
+    --primary-dark: #c53030;
+    --text: #1e293b;
+    --text-light: #64748b;
+    --text-muted: #94a3b8;
+    --border: #e2e8f0;
+    --bg: #f8fafc;
+    --white: #ffffff;
+}
+
+.marging-main-dashboard {
+    margin: 60% 0% 0% 0% !important;
+}
+
+
+/* Start breadcrumb */
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #717DFF;
+}
+
+.breadcrumb-section {
+    border-radius: 15px;
+    background-color: #F5F5F5;
+}
+
+.btn-go-main-page {
+    width: 150px;
+    background-color: #717DFF;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    transition: all .4s;
+}
+
+.btn-go-main-page:hover {
+    color: #717DFF;
+    background-color: #ffffff6b;
+}
+
+.col-breadcrumb {
+    margin-top: 20px;
+}
+
+
+/* End breadcrumb */
+
+
+/* Start panel person */
+
+.card-panel-menu {
+    border-radius: 30px;
+}
+
+.panel-person-section {
+    padding: 20px;
+}
+
+.fair-price {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    margin: 10px;
+    background-color: #717DFF;
+}
+
+.fair-price .fa-user-circle {
+    border-radius: 50%;
+    background-color: white;
+    color: #D6D6D6;
+    /* color: #fff; */
+    font-size: 100px;
+    transform: translate(10px, 40px);
+}
+
+.container-pencill-icon {
+    background-color: black;
+    width: max-content;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.edit-and-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container-pencill-icon i {
+    font-size: 20px;
+}
+
+.navbar-panel-person-menu-items {
+    padding: 10px;
+    transition: .4s;
+}
+
+.navbar-panel-person-menu-items:hover {
+    /* padding: 20px; */
+    background-color: #eee;
+    border-radius: 15px;
+    color: #949494;
+}
+
+.text-see-more-wallet {
+    color: white;
+}
+
+.see-more-wallet {
+    width: fit-content;
+    border: none;
+    background-color: #717DFF;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.see-more-wallet:hover {
+    background-color: white;
+}
+
+.see-more-wallet:hover .text-see-more-wallet {
+    color: #717DFF !important;
+}
+
+
+/* End panel person */
+
+
+/* <!-- Start Quick access --> */
+
+
+/*  */
+
+.owl-nav {
+    display: none;
+}
+
+.upload-card {
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 20px 24px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+}
+
+.upload-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.upload-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.upload-title i {
+    color: var(--primary);
+    font-size: 0.85rem;
+}
+
+.upload-badge {
+    background: #fef2f2;
+    color: var(--primary);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.upload-main-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px;
+    background: var(--bg);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.circle-progress {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #e5e7eb;
+    stroke-width: 4;
+}
+
+.circle-fill {
+    fill: none;
+    stroke: #717DFF;
+    stroke-width: 4;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: stroke-dashoffset 0.6s ease;
+}
+
+.circle-percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #717DFF;
+}
+
+.upload-info {
+    flex: 1;
+    min-width: 120px;
+}
+
+.upload-label {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-bottom: 2px;
+}
+
+.upload-status {
+    font-size: 0.78rem;
+    color: #717DFF;
+    font-weight: 500;
+}
+
+.upload-actions {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.btn-complete {
+    background: #717DFF;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: 'Vazirmatn', Tahoma, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.btn-complete:hover {
+    background: #717dffd3;
+    transform: translateY(-1px);
+}
+
+.btn-complete:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-delete {
+    background: var(--white);
+    color: var(--text-light);
+    border: 1px solid var(--border);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-family: 'Vazirmatn', Tahoma, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.btn-delete:hover {
+    background: #fef2f2;
+    border-color: #fca5a5;
+    color: var(--primary);
+}
+
+.upload-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.update-date {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.update-date i {
+    font-size: 0.65rem;
+}
+
+.file-id {
+    direction: ltr;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.details-on-magazine-cover {
+    position: absolute;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+    font-size: 12px;
+    align-items: start;
+    margin-right: 10px;
+}
+
+.details-on-magazine-cover .time-magazine {
+    margin-top: 165px;
+}
+
+.text-hosting-trainings {
+    background-color: #717DFF;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.owl-stage-outer {
+    height: 370px;
+}
+
+
+/*  */
+
+
+/* <!-- End Quick access --> */
+
+@media (max-width: 576px) {
+    .upload-main-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .upload-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .btn-complete,
+    .btn-delete {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .upload-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,321 @@
+.count-room-number {
+    background-color: #717DFF;
+}
+
+.card-header-custom {
+    padding: 20px 24px;
+    border-bottom: 1px solid #eef2f8;
+}
+
+.card-header-custom h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: #1e2a3e;
+}
+
+.rooms-container {
+    padding: 16px 20px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.room-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.room-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: #fafcff;
+    cursor: pointer;
+    border-bottom: 1px solid #eef2f8;
+}
+
+.room-header:hover {
+    background: #f8f9fc;
+}
+
+.room-title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1e2a3e;
+}
+
+.room-badge {
+    background: #f1f4f9;
+    padding: 4px 12px;
+    border-radius: 30px;
+    font-size: 12px;
+    color: #2c3e66;
+}
+
+.room-summary {
+    padding: 12px 20px;
+    background: #f8f9fc;
+    font-size: 13px;
+    color: #5b6e8c;
+    border-bottom: 1px solid #eef2f8;
+}
+
+.room-body {
+    padding: 20px;
+    display: none;
+}
+
+.room-body.open {
+    display: block;
+}
+
+.bed-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f2f6;
+}
+
+.bed-item:last-child {
+    border-bottom: none;
+}
+
+.bed-label {
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.counter-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.counter-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #dee2e6;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.counter-btn:hover {
+    background: #f1f4f9;
+}
+
+.counter-value {
+    font-size: 15px;
+    font-weight: 600;
+    min-width: 30px;
+    text-align: center;
+}
+
+.edit-btn,
+.close-body-btn {
+    background: none;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.edit-btn {
+    color: #0d6efd;
+}
+
+.edit-btn:hover {
+    background: #e7f1ff;
+}
+
+.close-body-btn {
+    color: #dc3545;
+}
+
+.close-body-btn:hover {
+    background: #ffe7e7;
+}
+
+.delete-room {
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.delete-room:hover {
+    background: #ffe7e7;
+}
+
+.add-room-btn {
+    width: 100%;
+    padding: 14px;
+    background: #f8f9fc;
+    border: 2px dashed #cbd5e1;
+    border-radius: 60px;
+    color: #1e2a3e;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+.add-room-btn:hover {
+    background: #eef2ff;
+    border-color: #717DFF;
+}
+
+
+/*  */
+
+.card-header-custom {
+    padding: 20px 24px;
+    border-bottom: 1px solid #eef2f8;
+}
+
+.card-header-custom h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: #1e2a3e;
+}
+
+.shared-space-container {
+    padding: 16px 20px;
+}
+
+
+/* کارت فضای مشترک */
+
+.shared-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.shared-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: #fafcff;
+    cursor: pointer;
+    border-bottom: 1px solid #eef2f8;
+}
+
+.shared-header:hover {
+    background: #f8f9fc;
+}
+
+.shared-title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1e2a3e;
+}
+
+.shared-badge {
+    background: #f1f4f9;
+    padding: 4px 12px;
+    border-radius: 30px;
+    font-size: 12px;
+    color: #2c3e66;
+}
+
+.shared-summary {
+    padding: 12px 20px;
+    background: #f8f9fc;
+    font-size: 13px;
+    color: #5b6e8c;
+    border-bottom: 1px solid #eef2f8;
+}
+
+.shared-body {
+    padding: 20px;
+    display: none;
+}
+
+.shared-body.open {
+    display: block;
+}
+
+.bed-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f2f6;
+}
+
+.bed-item:last-child {
+    border-bottom: none;
+}
+
+.bed-label {
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.counter-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.counter-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #dee2e6;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.counter-btn:hover {
+    background: #f1f4f9;
+}
+
+.counter-value {
+    font-size: 15px;
+    font-weight: 600;
+    min-width: 30px;
+    text-align: center;
+}
+
+.close-body-btn {
+    background: none;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: 0.2s;
+    color: #dc3545;
+}
+
+.close-body-btn:hover {
+    background: #ffe7e7;
+}
+
+
+/*  */

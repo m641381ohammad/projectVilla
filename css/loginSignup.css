@@ -1,0 +1,356 @@
+ /* استایل مودال */
+
+ .login-modal-overlay {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.7);
+     backdrop-filter: blur(5px);
+     z-index: 10000;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .login-modal-overlay.show {
+     display: flex;
+ }
+
+ .login-modal-container {
+     position: relative;
+     z-index: 10001;
+     background: white;
+     border-radius: 32px;
+     width: 90%;
+     max-width: 450px;
+     /* margin: 20px; */
+     margin: 20px;
+     top: 20px;
+     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+     animation: loginModalFadeIn 0.3s ease;
+     max-height: 90vh;
+     display: flex;
+     flex-direction: column;
+     overflow: hidden;
+ }
+
+ @keyframes loginModalFadeIn {
+     from {
+         opacity: 0;
+         transform: scale(0.95);
+     }
+
+     to {
+         opacity: 1;
+         transform: scale(1);
+     }
+ }
+
+ .login-modal-header {
+     padding: 20px 24px;
+     border-bottom: 1px solid #eef2f8;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-shrink: 0;
+     background: white;
+ }
+
+ .login-modal-header h3 {
+     font-size: 22px;
+     font-weight: 700;
+     margin: 0;
+     color: #1e2a3e;
+ }
+
+ .login-modal-close {
+     background: none;
+     border: none;
+     font-size: 28px;
+     cursor: pointer;
+     color: #7f8c8d;
+     transition: 0.2s;
+ }
+
+ .login-modal-close:hover {
+     color: #717DFF;
+ }
+
+ .login-modal-body {
+     padding: 24px;
+     flex: 1;
+     overflow-y: auto;
+ }
+
+ /* مراحل */
+
+ .login-step {
+     display: none;
+ }
+
+ .login-step.active-Registration {
+     display: block;
+ }
+
+ .login-note {
+     font-size: 14px;
+     color: #6c757d;
+     margin-bottom: 20px;
+ }
+
+ /* انتخاب کشور */
+
+ .country-selector {
+     margin-bottom: 20px;
+ }
+
+ .country-label {
+     font-size: 14px;
+     font-weight: 600;
+     color: #2c3e50;
+     margin-bottom: 8px;
+     display: block;
+ }
+
+ .selected-country {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+     padding: 12px 16px;
+     border: 1px solid #dee2e6;
+     border-radius: 16px;
+     cursor: pointer;
+     background: #f8f9fc;
+     transition: 0.2s;
+ }
+
+ .selected-country:hover {
+     border-color: #667eea;
+     background: #f0f3ff;
+ }
+
+ .country-flag {
+     font-size: 28px;
+ }
+
+ .country-code {
+     font-size: 16px;
+     font-weight: 600;
+     color: #717DFF;
+ }
+
+ .country-name {
+     font-size: 14px;
+     color: #717DFF;
+     flex: 1;
+ }
+
+ .country-list {
+     margin-top: 15px;
+     border: 1px solid #dee2e6;
+     border-radius: 16px;
+     background: white;
+     overflow: hidden;
+     display: none;
+ }
+
+ .country-list.show {
+     display: block;
+ }
+
+ .country-search {
+     padding: 12px;
+     border-bottom: 1px solid #eef2f8;
+ }
+
+ .country-search input {
+     width: 100%;
+     padding: 10px 12px;
+     border: 1px solid #dee2e6;
+     border-radius: 12px;
+     font-size: 14px;
+ }
+
+ .country-items {
+     max-height: 200px;
+     overflow-y: auto;
+ }
+
+ .country-item {
+     padding: 10px 16px;
+     display: flex;
+     align-items: center;
+     gap: 12px;
+     cursor: pointer;
+     transition: 0.2s;
+     border-bottom: 1px solid #eef2f8;
+ }
+
+ .country-item:hover {
+     background: #f5f7ff;
+ }
+
+ /* شماره همراه و رمز و کد */
+
+ .phone-input-group,
+ .code-input-group,
+ .password-input-group {
+     margin-bottom: 24px;
+ }
+
+ .phone-label,
+ .code-label,
+ .password-label {
+     font-size: 14px;
+     font-weight: 600;
+     color: #2c3e50;
+     margin-bottom: 8px;
+     display: block;
+ }
+
+ .phone-input-wrapper,
+ .code-input-wrapper,
+ .password-input-wrapper {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     border: 1px solid #dee2e6;
+     border-radius: 16px;
+     padding: 4px 16px;
+     background: white;
+ }
+
+ .phone-prefix {
+     font-size: 18px;
+     font-weight: 600;
+     color: #667eea;
+     direction: ltr;
+ }
+
+ .phone-input,
+ .code-input,
+ .password-input {
+     flex: 1;
+     border: none;
+     padding: 14px 0;
+     font-size: 16px;
+     direction: ltr;
+     background: transparent;
+ }
+
+ .phone-input:focus,
+ .code-input:focus,
+ .password-input:focus {
+     color: #717DFF;
+     outline: none;
+ }
+
+ /* نمایش شماره */
+
+ .phone-display span {
+     direction: ltr;
+     display: inline-block;
+ }
+
+ .phone-display {
+     background: #f8f9fc;
+     padding: 14px 16px;
+     border-radius: 16px;
+     margin-bottom: 20px;
+     text-align: center;
+     font-size: 18px;
+     font-weight: 600;
+     color: #1e2a3e;
+     border: 1px solid #eef2f8;
+ }
+
+ .phone-display span {
+     color: #667eea;
+ }
+
+ .edit-number-link {
+     font-size: 13px;
+     color: #667eea;
+     cursor: pointer;
+     margin-right: 10px;
+ }
+
+ /* تایمر */
+
+ .timer-text {
+     font-size: 13px;
+     color: #6c757d;
+     margin-bottom: 16px;
+ }
+
+ .resend-link {
+     background: none;
+     border: none;
+     color: #667eea;
+     cursor: pointer;
+     font-size: 13px;
+     margin-right: 10px;
+ }
+
+ .resend-link.disabled {
+     color: #adb5bd;
+     cursor: not-allowed;
+ }
+
+ /* لینک‌های جابجایی بین مراحل */
+
+ .switch-login-method {
+     text-align: center;
+     margin-top: 16px;
+ }
+
+ .switch-login-method a {
+     color: #667eea;
+     text-decoration: none;
+     font-size: 13px;
+     cursor: pointer;
+ }
+
+ /* دکمه اصلی */
+
+ .submit-login-btn {
+     width: 100%;
+     padding: 14px;
+     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+     border: none;
+     border-radius: 50px;
+     color: white;
+     font-size: 16px;
+     font-weight: 600;
+     cursor: pointer;
+     transition: 0.3s;
+     margin-top: 8px;
+ }
+
+ .submit-login-btn:hover {
+     transform: translateY(-2px);
+     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+ }
+
+ .login-footer-note {
+     font-size: 12px;
+     color: #7f8c8d;
+     text-align: center;
+     margin-top: 16px;
+ }
+
+ /* دکمه نمونه */
+
+ .demo-btn {
+     background: #667eea;
+     border: none;
+     padding: 12px 24px;
+     border-radius: 50px;
+     font-size: 16px;
+     font-weight: 600;
+     cursor: pointer;
+     color: white;
+     margin: 20px;
+ }

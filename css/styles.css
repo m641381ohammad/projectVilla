@@ -1,0 +1,1363 @@
+/* Start add font */
+
+@font-face {
+    font-family: iranSansLight;
+    src: url("../fonts/IRANSansWeb_Light.woff") format('woff')
+}
+
+@font-face {
+    font-family: iranSansMedium;
+    src: url("../fonts/IRANSansWeb_Medium.woff") format('woff')
+}
+
+@font-face {
+    font-family: iranSansBold;
+    src: url("../fonts/IRANSansWeb_Bold.woff") format('woff')
+}
+
+
+/* End add font */
+
+body {
+    direction: rtl;
+    font-family: iranSansMedium;
+    /* text-align: right; */
+    overflow-x: hidden !important;
+}
+
+
+/* .banner-slider {
+    position: relative;
+    z-index: 1;
+} */
+
+.menu-navbar-home-page {
+    margin-top: -790px;
+}
+
+.carousel-item {
+    /* width: 100%; */
+    /* height: 800px; */
+    /* overflow: hidden; */
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+/* .banner-slider,
+.banner-slider .carousel-inner,
+.banner-slider .carousel-item {
+    height: 800px;
+} */
+
+
+/* .banner-slider {
+    position: relative;
+} */
+
+
+.banner-slider img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+/* .banner-slider img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+} */
+
+.card-faster-search img {
+    width: 100% !important;
+    max-height: 100% !important;
+}
+
+.banner-text {
+    z-index: 1;
+}
+
+
+/* *************************************************** */
+/* کامپوننت اصلی */
+
+/* کامپوننت اصلی */
+.search-component {
+    width: 100%;
+    max-width: 1000px;
+    background: white;
+    border-radius: 60px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* هدر */
+.search-header {
+    text-align: center;
+    padding: 25px 20px 15px;
+    background: white;
+}
+
+.search-header h1 {
+    font-size: 28px;
+    color: #1e2a3e;
+    margin-bottom: 8px;
+}
+
+.search-header p {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+/* ردیف فیلدها */
+.search-fields {
+    display: flex;
+    flex-wrap: wrap;
+    direction: rtl;
+}
+
+/* هر فیلد */
+.search-field {
+    flex: 1;
+    min-width: 170px;
+    position: relative;
+}
+
+.search-field:last-child {
+    border-left: none;
+}
+
+.search-field input {
+    width: 100%;
+    padding: 18px 20px;
+    border: none;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+    font-family: inherit;
+    direction: rtl;
+    transition: all 0.2s;
+}
+
+.search-field input:focus {
+    outline: none;
+    background: #fafcff;
+}
+
+.search-field input::placeholder {
+    color: #adb5bd;
+}
+
+/* دکمه جستجو */
+.search-submit {
+    /* background: linear-gradient(135deg, #717DFF 0%, #5a67d8 100%); */
+    background-color: #FF385C;
+    border: none;
+    padding: 0 35px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s;
+    z-index: 5;
+}
+
+.search-submit:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* ========== Dropdown مشترک ========== */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    margin-top: 5px;
+    display: none;
+    overflow: hidden;
+}
+
+.dropdown.show {
+    display: block;
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* شهرها */
+.dropdown-search {
+    padding: 12px;
+    border-bottom: 1px solid #eef2f8;
+}
+
+.dropdown-search input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    font-size: 13px;
+    cursor: text;
+}
+
+.dropdown-search input:focus {
+    outline: none;
+    border-color: #717DFF;
+}
+
+.dropdown-list {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.dropdown-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.dropdown-item:hover {
+    background: #f0f3ff;
+    color: #717DFF;
+    padding-right: 22px;
+}
+
+/* تقویم */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eef2f8;
+}
+
+.calendar-nav {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.calendar-nav:hover {
+    background: #f0f3ff;
+}
+
+.calendar-title {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 12px 15px 5px;
+    text-align: center;
+}
+
+.calendar-weekday {
+    font-size: 12px;
+    padding: 5px 0;
+    color: #717DFF;
+    font-weight: 600;
+}
+
+.calendar-weekday.friday {
+    color: #e74c3c;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 5px 15px 15px;
+}
+
+.calendar-day {
+    text-align: center;
+    padding: 8px 0;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.calendar-day:hover {
+    background: #f0f3ff;
+    transform: scale(1.05);
+}
+
+.calendar-day.selected {
+    background: #717DFF;
+    color: white;
+}
+
+/* تعداد نفرات */
+.guest-container {
+    padding: 15px;
+}
+
+.guest-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eef2f8;
+}
+
+.guest-item:last-child {
+    border-bottom: none;
+}
+
+.guest-label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.guest-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.guest-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: #f1f4f9;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.guest-btn:hover {
+    background: #717DFF;
+    color: white;
+    transform: scale(1.05);
+}
+
+.guest-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.guest-count {
+    min-width: 35px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.guest-total {
+    text-align: center;
+    padding-top: 12px;
+    margin-top: 10px;
+    border-top: 1px solid #eef2f8;
+    font-weight: 700;
+    color: #717DFF;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {}
+
+/* .search-submit {
+    background-color: #FF1172;
+    border: none;
+    border-radius: 50%;
+    margin-top: -34px;
+    margin-right: 268px;
+    padding: 9px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s;
+    z-index: 5;
+}
+
+.search-submit:hover {
+    transform: translateY(-1px);
+} */
+/* *************************************************** */
+
+
+/* .fair-price img {
+    width: 100% !important;
+    height: 170px !important;
+} */
+
+.card-cursor-pointer img {
+    width: 100% !important;
+    height: 170px !important;
+}
+
+.color-purpole-coustum {
+    color: #717dff !important;
+}
+
+.background-color-purpole-coustum {
+    background-color: #717dff !important;
+}
+
+.background-color-primary-custom {
+    background-color: #a5acfd !important;
+}
+
+.background-color-comment-users {
+    background-color: #eceeff !important;
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.background-footer {
+    background-color: #f3f3f3;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.owl-stage,
+.container-motivational-travel-discounts .owl-carousel .owl-stage-outer {
+    height: 300px !important;
+}
+
+.card-cursor-pointer,
+.card-faster-search {
+    cursor: pointer;
+    transition: .6s;
+}
+
+.card-cursor-pointer:hover,
+.card-faster-search:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(10px);
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+
+/* Start header section */
+
+.offcanvas-header {
+    justify-content: end;
+}
+
+.btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-style-custome:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-offcanvas-menu-items:hover {
+    background-color: #eee;
+    border-radius: 15px;
+    color: #949494;
+}
+
+.offcanvas-footer-custom {
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px;
+    background-color: #a5a5a5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offcanvas-menu-burger-footer-social-media-items-hover-animation {
+    transition: .6s;
+}
+
+.offcanvas-menu-burger-footer-social-media-items-hover-animation:hover {
+    transform: translateY(-2px);
+}
+
+.job-opportunities-number-menu-offcanvas {
+    background-color: #80808052;
+    border-radius: 80%;
+    padding: 6px;
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+.banner-card {
+    width: 50px;
+    height: 50px;
+}
+
+.margin-top-input-search {
+    /* margin-top: 30%; */
+    /* margin-top: 15%; */
+    margin-top: 250px;
+}
+
+.input-group {
+    width: 480px;
+}
+
+input::placeholder {
+    font-family: iranSansLight;
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+.btn-style-custome {
+    background-color: rgba(255, 255, 255, 0.33);
+    border-radius: 56px !important;
+    padding: 10px !important;
+    cursor: pointer !important;
+}
+
+.top-search-text {
+    /* margin-top: -95px; */
+    margin-bottom: 60px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.dis-short-top-search {
+    margin-top: -65px;
+}
+
+.search-icon-section {
+    position: absolute !important;
+    margin-right: 94% !important;
+    z-index: 9 !important;
+    background-color: #FF385C;
+    border-radius: 50% !important;
+    width: 40px;
+}
+
+.number-of-input-persons {
+    border-radius: 15px 0px 0px 15px !important;
+}
+
+.city-search-input {
+    border-radius: 0px 15px 15px 0px !important;
+}
+
+.text-map {
+    position: absolute;
+    margin: 4% !important;
+    z-index: 2;
+}
+
+.container-small-cards-big-size {
+    z-index: 6;
+}
+
+
+/* End header section */
+
+.container-md {
+    margin-top: -57% !important;
+}
+
+.scroll {
+    border-radius: 35px 0px 35px 0px;
+    background-color: #FF385C !important;
+    margin-top: 0px;
+}
+
+.card {
+    border: none !important;
+}
+
+.small-cards-row-parent {
+    transform: translateY(-60%);
+}
+
+.text-ajareh-section {
+    position: absolute;
+    color: white;
+    margin-top: 100%;
+    margin-right: 8%;
+}
+
+.price-ajareh {
+    font-size: 12px;
+}
+
+.cases-ajareh {
+    font-size: 12px;
+    background-color: rgb(238, 93, 117);
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.text-place {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: end;
+}
+
+.owl-prev,
+.owl-next {
+    /* transform: translate(-370px, -417px); */
+    width: 60px !important;
+    font-size: 30px !important;
+    /* background-color: rgba(116, 114, 114, 0.479) !important; */
+    background-color: white !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border: 1px solid black !important; */
+    border-radius: 15px !important;
+}
+
+.owl-prev>span,
+.owl-next>span {
+    color: black;
+}
+
+
+/* /////////Start Fair price//////// */
+
+.over-image {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.text-reserv {
+    position: absolute !important;
+    width: 87px;
+    padding: 4px !important;
+    margin-top: 5px;
+    margin-right: 7px;
+    color: white;
+    border-radius: 20px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorite-img {
+    position: absolute !important;
+    width: 30px !important;
+    padding: 4px !important;
+    margin-top: 5px;
+    margin-right: 205px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+.star-img {
+    width: 15px !important;
+    margin-left: 5px;
+}
+
+.see-more {
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 4px;
+    border-radius: 9px;
+    text-decoration: none;
+    z-index: 90 !important;
+}
+
+.see-more:hover {
+    color: black;
+}
+
+.star-icon {
+    color: #FCA241;
+}
+
+.discount-amount {
+    background-color: #FCA241;
+    padding: 3px;
+    border-radius: 9px;
+    color: black;
+}
+
+.fair-price {
+    position: relative;
+    background-color: #FCA241;
+}
+
+.fair-price::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../images&icons/PatternLastDiscount.png');
+    background-repeat: repeat;
+    background-size: 150px;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.brief-explanation-fair-price {
+    font-family: iranSansLight;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+
+/* /////////////End Fair price////////// */
+
+
+/* ///////////Start faster search//////////// */
+
+.villa-waters-edge {
+    position: absolute;
+    color: white;
+    margin-top: 100%;
+    margin-right: 28%;
+}
+
+.quick-search-accommodation-text {
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.row-faster-search .owl-stage-outer {
+    height: 390px;
+}
+
+.card-faster-search {
+    border-radius: 15px;
+}
+
+
+/* //////////End faster search///////////// */
+
+
+/* //////////Start price text-excellent accommodations///////////// */
+
+.price-text-excellent-accommodations {
+    position: absolute;
+    margin-top: 48%;
+    margin-right: 7px;
+}
+
+.previous-price-excellent-accommodations {
+    font-size: 12px;
+    color: wheat;
+}
+
+.discount-amount-excellent-accommodations {
+    font-size: 10px;
+    background-color: #cc0001;
+    color: white;
+}
+
+.new-price-excellent-accommodations {
+    font-size: 12px;
+    color: white;
+}
+
+.brief-description-premium-accommodations {
+    font-family: iranSansLight;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+
+/* //////////End price text-excellent accommodations///////////// */
+
+
+/* //////////Start premium accommodations///////////// */
+
+.tags-premium-accommodations {
+    font-size: 10px;
+}
+
+.instant-reservation-tags-premium-accommodations {
+    margin-top: 35px !important;
+}
+
+
+/* //////////End premium accommodations///////////// */
+
+
+/* ////////// Start Motivational travel discounts///////////// */
+
+.discount-city {
+    white-space: nowrap;
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 99;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.menu-ul-discound {
+    overflow-x: auto;
+}
+
+.motivational-travel-discounts {
+    position: relative;
+    background-color: #cc0001;
+}
+
+.motivational-travel-discounts::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../images&icons/PatternLastDiscount.png');
+    background-repeat: repeat;
+    background-size: 150px;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.tab-section {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    /* transition: all ease .5s; */
+}
+
+.show-section {
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+    transition: all ease .5s;
+}
+
+
+/* ////////// End Motivational travel discounts///////////// */
+
+
+/* //////////End Motivational travel discounts///////////// */
+
+.active-motivational-travel-discounts {
+    display: inline-block;
+    width: 85px;
+    color: black !important;
+    background-color: rgb(255, 212, 59) !important;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.price-motivational-travel-discounts {
+    position: absolute;
+    margin-top: 44%;
+    margin-right: 7px;
+    /* width: 70%; */
+    background-color: #000000ab;
+    border-radius: 10px 0px 0px 10px;
+    padding: 6px;
+    margin-right: 0%;
+}
+
+.cities {
+    height: 85px;
+}
+
+
+/* //////////End Motivational travel discounts///////////// */
+
+
+/* ////////// Start Special Tours ///////////// */
+
+.houre-special-tours {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: pink;
+    padding: 6px;
+    margin-top: 3%;
+    margin-right: 65%;
+    color: #ff006ae8;
+}
+
+.margin-card-special-tours-price {
+    margin-right: -60px;
+}
+
+
+/* ////////// End Special Tours ///////////// */
+
+
+/* ////////// End Stories ///////////// */
+.row-faster-search .owl-carousel .owl-stage-outer {
+    height: 410px;
+}
+
+.tkhfif-padding .owl-carousel .owl-stage-outer {
+    height: 350px;
+}
+
+.row-articles .owl-carousel .owl-stage-outer {
+    height: 300px;
+}
+
+.img-stories {
+    width: 70% !important;
+    /* width: 30% !important; */
+    border: 1px solid purple;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.owl-carousel-stores .owl-stage-outer {
+    width: 100%;
+    height: 120px !important;
+    padding-right: 15px;
+}
+
+.owl-carousel-stores .owl-nav {
+    margin-top: 21px;
+}
+
+.story-details {
+    font-family: iransansLight;
+    font-size: 15px;
+    font-weight: 100;
+    /* margin-bottom: 30px; */
+}
+
+.story-title {
+    margin-top: 35px;
+}
+
+
+/* ////////// End Stories ///////////// */
+
+.section-row-nazar {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.color-gray-custom {
+    color: #949494;
+}
+
+.title-card-premium-accommodations,
+.font-size-card-special-tours {
+    font-size: 11px;
+}
+
+
+/* ///////////////// */
+
+
+/*  */
+
+.margin-main {
+    /* margin: 85% 0%; */
+    /* margin: 105% 0%; */
+    position: sticky;
+    background: white;
+    /* margin: 65% 0%; */
+    /* margin: 67% 0%; */
+    margin: 80% 0%;
+    margin-bottom: 900px;
+    /* margin: 100% 0%; */
+
+    border-radius: 30px 30px 0px 0px;
+    z-index: 5;
+}
+
+.margin-fluid {
+    margin: 60% 0%;
+}
+
+.tkhfif-padding {
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+
+.eghamatgage-ekhtasase-margin-top {
+    margin-top: 755px !important;
+}
+
+.poshtibani-margin {
+    margin-top: 800px;
+}
+
+
+/*  */
+
+.border-img-poshtibani {
+    border: 1px solid #717dff;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.text-poshtibani {
+    margin-right: -127px;
+}
+
+.style-col-social-media {
+    width: 40px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.nemad {
+    width: 70px;
+}
+
+.navbar-expand-lg .navbar-toggler {
+    display: inline-block !important;
+}
+
+
+/* End slider styles */
+
+
+/* Start Footer */
+
+.download-app {
+    cursor: pointer;
+}
+
+.tel-social-media {
+    background: linear-gradient(125deg, rgb(53, 185, 252) 0%, rgb(5, 131, 193) 100%);
+}
+
+.insta-social-media {
+    background: linear-gradient(125deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 55%, rgb(252, 176, 69) 100%);
+}
+
+.social-media {
+    width: 130px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.licenses {
+    width: 90px;
+    border-radius: 15px;
+    background-color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.footer-rental-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.footer-rental-text {
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: iranSansLight;
+    cursor: pointer;
+}
+
+.access-link-text {
+    font-size: 13px;
+    font-weight: 500;
+    transition: .6s;
+}
+
+.access-link-text:hover {
+    color: #cc0001 !important;
+}
+
+.footer-items-hover-animation {
+    transition: .6s;
+}
+
+.footer-items-hover-animation:hover {
+    transform: rotate(5deg);
+}
+
+.font-size-menu-app-mobile-text,
+.font-size-menu-app-mobile-icon {
+    font-size: 13px;
+}
+
+.active-menu-app-mobile-nav {
+    color: #cc0001;
+}
+
+.footer-mobile-menu-app {
+    display: none;
+}
+
+.copy-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: iranSansLight;
+    font-size: 12px;
+    background-color: #CBCBCB;
+    margin-top: 50px;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.business-name {
+    font-family: iranSansBold;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+
+/* End Footer */
+
+
+/* /////Start Media Query///// */
+
+@media screen and (max-width: 1800px) {
+
+    .carousel-item {
+        height: 970px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+
+    .carousel-item {
+        height: 980px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+
+    .carousel-item {
+        height: 910px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+
+    .carousel-item {
+        height: 850px;
+    }
+}
+
+@media screen and (max-width: 1445px) {
+
+    .carousel-item {
+        height: 820px;
+    }
+}
+
+@media screen and (max-width: 1326px) {
+
+    .carousel-item {
+        height: 800px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .download-app {
+        width: 170px;
+    }
+
+    .margin-main {
+        margin-bottom: 630px;
+    }
+
+    .search-component {
+        border-radius: 30px;
+    }
+
+    .search-fields {
+        flex-direction: column;
+    }
+
+
+    .search-submit {
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .dropdown {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .search-field input {
+        margin-bottom: 5px;
+        border-radius: 15px !important;
+    }
+
+    .search-submit {
+        border-radius: 15px !important;
+    }
+
+    /* .banner-slider img {
+        object-fit: cover;
+        height: 700px;
+    } */
+}
+
+@media screen and (max-width: 768px) {
+    .margin-top-input-search {
+        margin-top: -1%;
+    }
+
+    .margin-main {
+        margin-bottom: 470px;
+    }
+
+    .top-search-text {
+        margin-top: 35px;
+        font-size: 15px;
+        font-weight: 900;
+    }
+
+    .dis-short-top-search {
+        margin-top: -45px;
+    }
+
+    .small-cards-row-parent {
+        transform: translateY(-15%);
+    }
+
+    .discount-city {
+        font-size: 10px;
+    }
+
+    /* .banner-slider img {
+        object-fit: cover;
+        height: 450px;
+    }
+
+    .menu-navbar-home-page {
+        transform: translateY(5%);
+    } */
+}
+
+
+@media screen and (max-width: 576px) {
+    .input-search-coustom {
+        border: none !important;
+        outline: none !important;
+        position: absolute;
+        border-radius: 15px !important;
+        max-width: 70% !important;
+    }
+
+    .top-search-text {
+        font-size: 10px;
+    }
+
+    .dis-short-top-search {
+        font-size: 10px;
+    }
+
+    .margin-top-input-search {
+        margin-top: -30px;
+    }
+
+    .input-group {
+        width: 250px;
+        margin-top: 4px !important;
+    }
+
+    .search-icon-section {
+        margin-right: 223px !important;
+        padding: 6px;
+        border-radius: 50% !important;
+        width: 40px;
+    }
+
+    .see-more {
+        font-size: 11px;
+    }
+
+    .brief-explanation-fair-price {
+        font-size: 10px;
+    }
+
+    .brief-description-premium-accommodations,
+    .story-details {
+        font-size: 10px;
+    }
+
+    .price-text-excellent-accommodations {
+        margin-top: 45%;
+    }
+
+    /* .banner-slider img {
+        object-fit: cover;
+        height: 330px;
+    } */
+    /* .footer-big-size {
+        display: none;
+    }*/
+    /* .footer-mobile-menu-app {
+        display: inline-block;
+    } */
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .margin-main {
+        margin-bottom: 320px;
+    }
+}
+
+
+
+/* /////End Media Query///// */
