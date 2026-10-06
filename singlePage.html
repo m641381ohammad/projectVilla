@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>صفحه سینگل جاویلا</title>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/css/persian-datepicker-dark.min.css"> -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.rtl.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/loginSignup.css">
+    <link rel="stylesheet" href="css/singlePage.css">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <header>
+
+        <section class="header-search">
+            <div class="container-md">
+
+                <div class="row">
+                    <section class="menu-big-size">
+                        <div class="row">
+                            <div class="col d-flex align-items-center">
+                                <a class="navbar-brand text-black" href="#">
+                                    <img src="images&icons/logo.png" class="logo-size" alt=""> لوگو
+                                </a>
+
+                                <div class="search-section">
+                                    <input class="form-control me-2 shadow-lg search-form-single-page" type="search" placeholder="جستجوی شهر، استان یا نام اقامتگاه" aria-label="Search">
+                                    <img src="images&icons/search.png" class="search-img search-img-section-search search-img-small-size" width="25px" alt="" />
+                                </div>
+
+                            </div>
+                            <div class="col d-flex align-items-center justify-content-end">
+                                <ul class="navbar-nav mb-2 mb-lg-0 d-flex flex-row gap-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-black" aria-current="page" href="#">میزبان شوید</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-black" href="#">علاقه مندی ها</a>
+                                    </li>
+                                    <li class="nav-item text-black">
+                                        <a class="nav-link text-black" href="#">پشتیبانی</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <span class="btn text-white background-color-purpole-coustum" data-login-trigger>ورود / ثبت نام</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="menu-small-size">
+                        <!-- Start Nav -->
+                        <nav class="navbar navbar-expand-lg bg-transparent navbar-scroll">
+                            <div class="container-fluid ">
+
+                                <button class="navbar-toggler text-white btn-style-custome" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars text-black"></i>
+            </button>
+                                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                                    <div class="offcanvas-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link color-gray-custom navbar-toggler-offcanvas-menu-items" aria-current="page" href="#">صفحه اصلی</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-gray-custom navbar-toggler-offcanvas-menu-items" aria-current="page" href="#"
+                      >درباره ما</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-gray-custom navbar-toggler-offcanvas-menu-items" aria-current="page" href="#"
+                      >قوانین سایت</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-gray-custom navbar-toggler-offcanvas-menu-items" aria-current="page" href="#"
+                      >چگونه مهمان شوم</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-gray-custom navbar-toggler-offcanvas-menu-items d-flex justify-content-between align-items-center" aria-current="page" href="#"
+                      >فرصت‌های شغلی <span class="job-opportunities-number-menu-offcanvas">4</span></a
+                    >
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-gray-custom navbar-toggler-offcanvas-menu-items" href="#">میزبان شوید</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link color-gray-custom navbar-toggler-offcanvas-menu-items" href="#">شیوه های پرداخت</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link color-gray-custom navbar-toggler-offcanvas-menu-items" href="#">پرسش های متداول</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link color-gray-custom navbar-toggler-offcanvas-menu-items" href="#">قوانین و مقررات</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="offcanvas-footer offcanvas-footer-custom">
+                                        <a href="#" class="offcanvas-menu-burger-footer-social-media-items-hover-animation"><img src="images&icons/telegram-brands-solid-full.svg" width="30px" alt=""></a>
+                                        <a href="#" class="offcanvas-menu-burger-footer-social-media-items-hover-animation"><img src="images&icons/instagram-brands-solid-full.svg" width="30px" alt=""></a>
+                                        <a href="#" class="offcanvas-menu-burger-footer-social-media-items-hover-animation"><img src="images&icons/telegram-brands-solid-full.svg" width="30px" alt=""></a>
+                                        <a href="#" class="offcanvas-menu-burger-footer-social-media-items-hover-animation"><img src="images&icons/instagram-brands-solid-full.svg" width="30px" alt=""></a>
+                                    </div>
+                                </div>
+
+                                <a class="navbar-brand text-black" href="#"><img src="images&icons/logo.png" alt="" width="25px" /> لوگو</a>
+
+                            </div>
+                        </nav>
+
+                        <!-- End Nav -->
+                    </section>
+
+                </div>
+
+            </div>
+        </section>
+
+    </header>
+
+    <main class="margin-main">
+        <!-- ========== کامپوننت مودال لاگین ========== -->
+        <div id="loginModalComponent" class="login-modal-overlay">
+            <div class="login-modal-container">
+                <div class="login-modal-header">
+                    <h3><i class="fas fa-user-circle me-2" style="color: #667eea;"></i> ورود / ثبت نام</h3>
+                    <button class="login-modal-close" id="closeLoginModalBtn">&times;</button>
+                </div>
+                <div class="login-modal-body">
+
+                    <!-- مرحله 1: ورود شماره موبایل -->
+                    <div id="step1" class="login-step active">
+                        <p class="login-note">برای ورود یا ثبت‌نام، شماره همراه خود را وارد کنید.</p>
+
+                        <div class="country-selector">
+                            <label class="country-label"><i class="fas fa-globe me-1"></i> انتخاب کشور</label>
+                            <div class="selected-country" id="selectedCountryBtn">
+                                <span class="country-flag" id="selectedFlag">🇮🇷</span>
+                                <span class="country-code" id="selectedCode">+98</span>
+                                <span class="country-name" id="selectedName">ایران</span>
+                                <i class="fas fa-chevron-down me-auto" style="color: #7f8c8d;"></i>
+                            </div>
+                            <div class="country-list" id="countryList">
+                                <div class="country-search">
+                                    <input type="text" id="countrySearchInput" placeholder="جستجو کشور...">
+                                </div>
+                                <div class="country-items" id="countryItems"></div>
+                            </div>
+                        </div>
+
+                        <div class="phone-input-group">
+                            <label class="phone-label"><i class="fas fa-mobile-alt me-1"></i> شماره همراه</label>
+                            <div class="phone-input-wrapper">
+                                <span class="phone-prefix" id="phonePrefix">+98</span>
+                                <input type="tel" class="phone-input" id="loginPhoneNumber" placeholder="912 123 4567" maxlength="15">
+                            </div>
+                        </div>
+
+                        <button class="submit-login-btn" id="sendCodeBtn">
+                  <i class="fas fa-paper-plane me-2"></i> ادامه
+              </button>
+                        <div class="login-footer-note">
+                            <i class="fas fa-lock me-1"></i> اطلاعات شما محفوظ می‌ماند
+                        </div>
+                    </div>
+
+                    <!-- مرحله 2: وارد کردن کد تایید (یکبار مصرف) -->
+                    <div id="step2" class="login-step">
+                        <div class="phone-display">
+                            کد فعال‌سازی به شماره موبایل شما پیامک شد<br>
+                            <span id="displayPhoneNumber">+98 912 123 4567</span>
+                            <span class="edit-number-link" id="editNumberBtn">(ویرایش)</span>
+                        </div>
+                        <p class="login-note">کد فعال‌سازی را وارد کنید</p>
+
+                        <div class="code-input-group">
+                            <label class="code-label"><i class="fas fa-key me-1"></i> کد فعال‌سازی</label>
+                            <div class="code-input-wrapper">
+                                <input type="text" class="code-input" id="verificationCode" placeholder="کد 6 رقمی" maxlength="6">
+                            </div>
+                        </div>
+
+                        <div class="timer-text" id="timerText">
+                            ارسال دوباره کد <span id="timerSeconds">01:33</span>
+                        </div>
+
+                        <button class="submit-login-btn" id="verifyCodeBtn">
+                  <i class="fas fa-check-circle me-2"></i> ورود
+              </button>
+
+                        <div class="switch-login-method">
+                            <a id="switchToPasswordBtn">ورود با رمز عبور</a>
+                        </div>
+                        <div class="login-footer-note">
+                            <i class="fas fa-lock me-1"></i> اطلاعات شما محفوظ می‌ماند
+                        </div>
+                    </div>
+
+                    <!-- مرحله 3: ورود با رمز عبور -->
+                    <div id="step3" class="login-step">
+                        <div class="phone-display">
+                            <span id="displayPhoneNumberStep3">+98 912 123 4567</span>
+                            <span class="edit-number-link" id="editNumberBtnStep3">(ویرایش)</span>
+                        </div>
+                        <p class="login-note">لطفا رمز عبور خود را وارد کنید</p>
+
+                        <div class="password-input-group">
+                            <label class="password-label"><i class="fas fa-lock me-1"></i> رمز عبور</label>
+                            <div class="password-input-wrapper">
+                                <input type="password" class="password-input" id="passwordInput" placeholder="رمز عبور خود را وارد کنید">
+                                <i class="fas fa-eye-slash toggle-password" id="togglePasswordIcon" style="cursor: pointer; color: #7f8c8d;"></i>
+                            </div>
+                        </div>
+
+                        <button class="submit-login-btn" id="loginWithPasswordBtn">
+      <i class="fas fa-sign-in-alt me-2"></i> ورود
+  </button>
+
+                        <div class="switch-login-method">
+                            <a id="switchToCodeBtn">ورود با کد یکبار مصرف</a>
+                        </div>
+                        <div class="login-footer-note">
+                            <i class="fas fa-lock me-1"></i> اطلاعات شما محفوظ می‌ماند
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-md">
+
+
+            <!-- Start accommodation Details -->
+            <section class="accommodation-Details">
+                <hr>
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-md-8">
+                        <div class="row">
+                            <a href="#img" class="btn btn-filter btn-filter-active mb-2">
+                             تصاویر
+                        </a>
+
+                            <a href="#specifications" class="btn btn-filter mb-2">
+                             مشخصات</a>
+
+                            <a href="#features" class="btn btn-filter mb-2">
+                             امکانات</a>
+
+                            <a href="#location" class="btn btn-filter mb-2">
+                             موقعیت</a>
+
+                            <a href="#calendar" class="btn btn-filter mb-2">
+                             تقویم</a>
+
+                            <a href="#rules" class="btn btn-filter mb-2">
+                             قوانین
+                        </a>
+
+                            <a href="#comments" class="btn btn-filter mb-2">
+                             نظرات
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End accommodation Details -->
+
+
+            <!-- Start accommodation Details picture -->
+            <section class="mt-5">
+                <div class="row">
+
+                    <div class="col-12 col-lg-6" id="main-image-col">
+                        <div class="col-accommodation-details-pictures main-image-wrapper" id="mainImageWrapper">
+                            <img src="" class="img-fluid w-100 accommodation-details-pictures main-image" id="mainImage" alt="">
+                            <div class="zoom-icon-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+
+                            <button class="gallery-nav gallery-nav-prev" id="prevBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                            <button class="gallery-nav gallery-nav-next" id="nextBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                            <div class="image-counter" id="imageCounter">
+                                <span id="currentImageNum">1</span> / <span id="totalImagesNum">0</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="text-black accommodation-details-title-pictures" id="villaTitle">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3 mt-lg-0 col-lg-6">
+                        <div class="thumbnails-container" id="thumbnailsContainer">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="gallery-modal" id="galleryModal">
+                <button class="modal-close-btn" id="modalCloseBtn">
+        <i class="fas fa-times"></i>
+    </button>
+
+                <button class="modal-nav-btn modal-nav-prev" id="modalPrevBtn">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+
+                <div class="modal-image-container">
+                    <img src="" alt="" class="modal-image" id="modalImage">
+                </div>
+
+                <button class="modal-nav-btn modal-nav-next" id="modalNextBtn">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+
+                <div class="modal-counter" id="modalCounter">1 / 0</div>
+
+                <div class="modal-thumbnails" id="modalThumbnails"></div>
+            </div>
+            <!-- End accommodation Details picture -->
+
+
+            <!-- Start Accommodation price -->
+            <section class="accommodation-benefits accommodation-price my-4">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+
+                        <div class="row">
+                            <div class="col-12 col-lg-8">
+                                <div class="villa-code-card">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src="images&icons/star.png" alt="">
+                                            <span><strong>4.9</strong> (56 نظر)</span>
+                                        </div>
+
+                                        <div class="col d-flex justify-content-end"><strong>کد ویلا: 26985</strong></div>
+                                    </div>
+
+                                    <div class="row mt-3"><strong>+100 رزرو موفق</strong></div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="villa-code-card mt-4 mt-lg-0">
+                                    <div class="row align-items-center">
+                                        <div class="col d-flex justify-content-end">
+                                            <img src="images&icons/stories1.webp" class="villa-card-img-person" alt="">
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="row">
+                                                <strong>مهرداد</strong>
+                                            </div>
+
+                                            <div class="row">
+                                                <span>3 سال میزبان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Start About the accommodation -->
+                        <section class="about-accommodation" id="specifications">
+                            <div class="row mt-3">
+                                <strong>درباره اقامتگاه</strong>
+                            </div>
+                            <div class="">
+                                <div class="row mt-3 ms-4">
+                                    <div class="row"><b>اقامت بی نقص</b></div>
+                                    <div class="row"><small>امتیاز کامل 10 مهمان اخیر به اقامتگاه</small></div>
+                                </div>
+
+                                <div class="row mt-3 ms-4">
+                                    <div class="row"><b>درباره ویلا</b></div>
+                                    <div class="row"><small>70 متر زیربنا، غیر دربست، طبقه1، 16پله</small></div>
+                                </div>
+
+                                <div class="row mt-3 ms-4">
+                                    <div class="row"><b>ظرفیت</b></div>
+                                    <div class="row"><small>ظرفیت تا 5 نفر (3 نفر پایه + تا 2 نفر اضافه)</small></div>
+                                </div>
+
+                                <div class="row mt-3 ms-4">
+                                    <div class="row"><b>سرویس‌های خواب</b></div>
+                                    <div class="row"><small>1 اتاق، 1 تخت دو نفره، تخت یک نفره ندارد، 4 رخت خواب سنتی</small></div>
+                                </div>
+
+                                <div class="row mt-3 ms-4">
+                                    <div class="row"><b>سرویس‌های بهداشتی</b></div>
+                                    <div class="row"><small>1 سرویس ایرانی، 1 سرویس فرنگی، 1 حمام</small></div>
+                                </div>
+
+                                <hr>
+                            </div>
+                        </section>
+                        <!-- End About the accommodation -->
+
+                        <!-- Start About explain -->
+                        <section class="about-explain">
+                            <div class="row"><strong>توضیحات ویلا</strong></div>
+                            <div class="row"><small class="explain-justify">لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم</small></div>
+                            <hr>
+                        </section>
+                        <!-- End About explain -->
+
+                        <!-- Start Important features -->
+                        <section class="important-features" id="features">
+                            <div class="row"><strong>امکانات مهم ویلا</strong></div>
+
+                            <div class="row mt-3 ms-3">
+                                <div class="col">
+                                    <p>پارکینگ</p>
+                                    <p>سیستم سرمایشی</p>
+                                    <p>آنتن دهی موبایل</p>
+                                </div>
+
+                                <div class="col">
+                                    <p>پارکینگ</p>
+                                    <p>سیستم سرمایشی</p>
+                                    <p>آنتن دهی موبایل</p>
+                                </div>
+                            </div>
+
+                            <div class="row ms-3"><a href="#" class="text-decoration-none text-black d-flex align-items-center view-all-features btn-hover-translateY
+                                btn-hover-translateY">مشاهده همه امکانات <i class="fas fa-arrow-circle-left ms-1"></i></a></div>
+                            <hr>
+                        </section>
+                        <!-- End Important features -->
+
+                        <!-- Start Date Time -->
+                        <section class="Date-times" id="calendar">
+                            <div class="container py-5">
+                                <div class="row justify-content-center">
+                                    <div class="col">
+
+                                        <div class="mb-4">
+                                            <strong class="fw-bold text-dark">تقویم و نرخ رزرو</strong>
+                                            <p>
+                                                <small class="text-muted">تاریخ ورود و خروج خود را انتخاب کنید</small>
+                                            </p>
+                                        </div>
+
+                                        <div class="calendar-card">
+
+                                            <div class="calendar-header">
+                                                <button class="nav-btn btn-prev" aria-label="ماه قبل">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+                                                <div class="months-container">
+                                                    <div class="month-box active">
+                                                        <span class="year" id="month1-year">۱۴۰۴</span>
+                                                        <h3 class="month-name" id="month1-name">دی</h3>
+                                                    </div>
+                                                    <div class="month-box">
+                                                        <span class="year" id="month2-year">۱۴۰۴</span>
+                                                        <h3 class="month-name" id="month2-name">بهمن</h3>
+                                                    </div>
+                                                </div>
+
+                                                <button class="nav-btn btn-next" aria-label="ماه بعد">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+                                            </div>
+
+                                            <div class="calendars-row">
+
+                                                <div class="calendar-month">
+
+                                                    <div class="weekdays-row">
+                                                        <div class="weekday-cell">شنبه</div>
+                                                        <div class="weekday-cell">یکشنبه</div>
+                                                        <div class="weekday-cell">دوشنبه</div>
+                                                        <div class="weekday-cell">سه‌شنبه</div>
+                                                        <div class="weekday-cell">چهارشنبه</div>
+                                                        <div class="weekday-cell">پنجشنبه</div>
+                                                        <div class="weekday-cell friday">جمعه</div>
+                                                    </div>
+
+                                                    <div class="days-grid" id="month1-days">
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="calendar-month">
+
+                                                    <div class="weekdays-row">
+                                                        <div class="weekday-cell">شنبه</div>
+                                                        <div class="weekday-cell">یکشنبه</div>
+                                                        <div class="weekday-cell">دوشنبه</div>
+                                                        <div class="weekday-cell">سه‌شنبه</div>
+                                                        <div class="weekday-cell">چهارشنبه</div>
+                                                        <div class="weekday-cell">پنجشنبه</div>
+                                                        <div class="weekday-cell friday">جمعه</div>
+                                                    </div>
+
+                                                    <div class="days-grid" id="month2-days">
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="legend-bar">
+                                                <div class="legend-item">
+                                                    <span class="legend-dot available"></span>
+                                                    <span>موجود</span>
+                                                </div>
+                                                <div class="legend-item">
+                                                    <span class="legend-dot selected"></span>
+                                                    <span>انتخاب شده</span>
+                                                </div>
+                                                <div class="legend-item">
+                                                    <span class="legend-dot range"></span>
+                                                    <span>بازه</span>
+                                                </div>
+                                                <div class="legend-item">
+                                                    <span class="legend-dot past"></span>
+                                                    <span>گذشته</span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="calendar-footer">
+                                                <button class="btn-clear">
+                <i class="fas fa-trash-alt ms-1"></i>
+                پاک کردن انتخاب
+            </button>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="summary-card">
+                                            <div class="summary-row">
+                                                <div class="summary-col">
+                                                    <span class="summary-label">تاریخ ورود</span>
+                                                    <span class="summary-value checkin" id="checkin-text">---</span>
+                                                </div>
+                                                <div class="summary-col">
+                                                    <div class="nights-badge">
+                                                        <span class="nights-number" id="nights-text">0</span>
+                                                        <span class="nights-label">شب</span>
+                                                    </div>
+                                                </div>
+                                                <div class="summary-col">
+                                                    <span class="summary-label">تاریخ خروج</span>
+                                                    <span class="summary-value checkout" id="checkout-text">---</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </section>
+                        <!-- End Date Time -->
+
+                        <!-- Start Accommodation Rules -->
+                        <section class="about-accommodation" id="rules">
+                            <div class="row mt-3">
+                                <strong>قوانین اقامتگاه</strong>
+                            </div>
+                            <div class="">
+                                <div class="row mt-3">
+                                    <small>✔️ استعمال دخانیات مجاز است.</small>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <small>✔️ استعمال دخانیات مجاز است.</small>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <small>✔️ استعمال دخانیات مجاز است.</small>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <small>✔️ استعمال دخانیات مجاز است.</small>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <small>🚫 ورود حیوانات خانگی مجاز نیست.</small>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <small>🚫 ورود حیوانات خانگی مجاز نیست.</small>
+                                </div>
+
+                                <hr>
+                            </div>
+                        </section>
+                        <!-- End Accommodation Rules -->
+
+                        <!-- Start Location -->
+                        <section class="about-accommodation" id="location">
+                            <div class="row mt-3">
+                                <strong>موقعیت مکانی</strong>
+                            </div>
+                            <div class="map-img-section">
+                                <div class="row mt-3 box-shadow-hover">
+                                    <img src="images&icons/singleMapPicture1.jpg" class="single-map-picture" alt="">
+                                </div>
+                                <hr>
+                            </div>
+                        </section>
+                        <!-- End Location -->
+
+                        <!-- Start Accommodation rating and reviews -->
+                        <section class="accommodation-rating-reviews" id="comments">
+                            <div class="row mt-3">
+                                <strong>امتیاز و نظرات اقامتگاه</strong>
+                            </div>
+
+                            <div class="row mt-3">
+                                <span><strong class="me-3">امتیاز 4.9 از 5</strong><small class="text-muted">از 56 نظر ثبت شده</small></span>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-12 col-md-3">
+                                    <div class="row">
+                                        <div class="col mt-2">
+                                            <div class="progress mb-3" style="height: 5px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 44%; background-color: #727CFF;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <small>5</small>
+                                            <img src="images&icons/star.png" style="width: 10px;" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col mt-2">
+                                            <div class="progress mb-3" style="height: 5px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 7%; background-color: #727CFF;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <small>4</small>
+                                            <img src="images&icons/star.png" style="width: 10px;" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col mt-2">
+                                            <div class="progress mb-3" style="height: 5px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 7%; background-color: #727CFF;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <small>3</small>
+                                            <img src="images&icons/star.png" style="width: 10px;" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col mt-2">
+                                            <div class="progress mb-3" style="height: 5px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 7%; background-color: #727CFF;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <small>2</small>
+                                            <img src="images&icons/star.png" style="width: 10px;" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col mt-2">
+                                            <div class="progress mb-3" style="height: 5px" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 7%; background-color: #727CFF;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <small>1</small>
+                                            <img src="images&icons/star.png" style="width: 10px;" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 col-md-3 d-flex flex-column justify-content-between mb-3 mb-md-0">
+                                    <span class="ditails-reviews d-flex justify-content-center mb-3 mb-lg-0">نظافت <b class="ms-4">4.8</b></span>
+                                    <span class="ditails-reviews d-flex justify-content-center">نظافت <b class="ms-4">4.8</b></span>
+                                </div>
+
+                                <div class="col-12 col-md-3 d-flex flex-column justify-content-between">
+                                    <span class="ditails-reviews d-flex justify-content-center mb-3 mb-lg-0">نظافت <b class="ms-4">4.8</b></span>
+                                    <span class="ditails-reviews d-flex justify-content-center">نظافت <b class="ms-4">4.8</b></span>
+                                </div>
+
+                                <div class="col-12 col-md-3 d-flex flex-column justify-content-between mt-3 mt-md-0">
+                                    <span class="ditails-reviews d-flex justify-content-center mb-3 mb-lg-0">نظافت <b class="ms-4">4.8</b></span>
+                                    <span class="ditails-reviews d-flex justify-content-center">نظافت <b class="ms-4">4.8</b></span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Start Comments -->
+                        <section class="comments">
+                            <div class="row mt-4 mb-2 justify-content-center box-shadow-hover">
+                                <div class="row mb-4 justify-content-center">
+                                    <div class="row row-comments">
+                                        <div class="col col-comments d-flex align-items-center">
+                                            <div class="icon-user me-3">
+                                                <i class="fas fa-user"></i>
+                                            </div>
+                                            <div class="name-comments d-flex flex-column justify-content-center">
+                                                <b>احسان</b>
+                                                <span class="text-muted">فروردین 1405</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col d-flex justify-content-end align-items-center">
+                                            <div class="me-2">
+                                                <img src="images&icons/star.png" style="width: 15px;" alt="">
+                                            </div>
+                                            <div class="me-2">
+                                                <img src="images&icons/star.png" style="width: 15px;" alt="">
+                                            </div>
+                                            <div class="me-2">
+                                                <img src="images&icons/star.png" style="width: 15px;" alt="">
+                                            </div>
+                                            <div class="me-2">
+                                                <img src="images&icons/star.png" style="width: 15px;" alt="">
+                                            </div>
+                                            <div class="me-2">
+                                                <img src="images&icons/star.png" style="width: 15px;" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-2">
+                                            <p style="font-size: 15px; text-align: justify;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+                                                متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row mb-1 justify-content-center">
+                                    <div class="row row-comments">
+                                        <div class="col col-comments d-flex align-items-center">
+                                            <div class="icon-user me-3">
+                                                <i class="fas fa-user"></i>
+                                            </div>
+                                            <div class="name-comments d-flex flex-column justify-content-center">
+                                                <b>احسان</b>
+                                                <span class="text-muted">فروردین 1405</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col d-flex justify-content-end align-items-center">
+                                            <div class="me-2">
+                                                <img src="images&icons/star.png" style="width: 15px;" alt="">
+                                            </div>
+                                            <div class="me-2">
+                                                <img src="images&icons/star.png" style="width: 15px;" alt="">
+                                            </div>
+                                            <div class="me-2">
+                                                <img src="images&icons/star.png" style="width: 15px;" alt="">
+                                            </div>
+                                            <div class="me-2">
+                                                <img src="images&icons/star.png" style="width: 15px;" alt="">
+                                            </div>
+                                            <div class="me-2">
+                                                <img src="images&icons/star.png" style="width: 15px;" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-2">
+                                            <p style="font-size: 15px; text-align: justify;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+                                                متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row mt-2 mb-2">
+                                    <a href="#" class="text-decoration-none text-black d-flex align-items-center btn-hover-translateY
+                                    btn-hover-translateY">مشاهده همه نظرات <i class="fas fa-arrow-circle-left ms-1"></i></a>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- End Comments -->
+                        <!-- End Accommodation rating and reviews -->
+
+
+                        <!-- Start Host information -->
+                        <section class="host-infos comments">
+                            <div class="row mt-4 mb-2 justify-content-center">
+
+                                <div class="row mb-1 justify-content-center">
+                                    <div class="row row-comments box-shadow-hover">
+                                        <div class="col col-comments d-flex align-items-center">
+                                            <div class="me-2">
+                                                <img src="images&icons/stories1.webp" class="villa-host-img-person" alt="">
+                                            </div>
+                                            <div class="name-comments d-flex flex-column justify-content-center">
+                                                <b>مهرداد</b>
+                                                <span class="text-muted">3 سال میزبان</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-4">
+
+                                            <div class="col d-flex flex-column justify-content-center align-items-center">
+                                                <b>زمان پاسخگویی</b>
+                                                <small class="text-muted">کمتر از 24 ساعت</small>
+                                            </div>
+
+                                            <div class="col d-flex flex-column justify-content-center align-items-center">
+                                                <b>میزان تایید رزرو</b>
+                                                <small class="text-muted">در حدود 33 درصد</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-5 mb-2">
+                                            <a href="#" class="text-decoration-none text-black d-flex align-items-center btn-hover-translateY
+                                            btn-hover-translateY">مشاهده پروفایل میزبان <i class="fas fa-arrow-circle-left ms-1"></i></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </section>
+                        <!-- End Host information -->
+
+
+
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 left-col">
+                        <div class="row bg-light shadow-lg justify-content-center align-items-center row-accommodation-price sidebar-sticky ms-lg-3">
+
+                            <div class="row my-4">
+                                <div class="every-nigth-price d-flex justify-content-between align-items-center">
+                                    <div class="container-price-text">
+                                        <p class="text-muted">نرخ هر شب:</p>
+                                    </div>
+                                    <div class="container-price-number">
+                                        <p class="text-black">5.200.000<span class="text-muted"> تومان</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row my-4">
+                                <div class="d-flex justify-content-between align-items-center discount-percentage">
+                                    <div class="container-price-text">
+                                        <p class="text-danger">25 درصد تخفیف</p>
+                                    </div>
+                                    <div class="container-price-number">
+                                        <p class="text-black">5.200.000<span class="text-muted"> تومان</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <!-- <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                    <input type="date" class="text-muted" placeholder="تاریخ ورود" name="" id="" style="width: 100%; height: 50px; padding: 10px; border: 1px solid gray; outline: none; border-radius: 10px;">
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <input type="date" class="text-muted" placeholder="تاریخ ورود" name="" id="" style="width: 100%; height: 50px; padding: 10px; border: 1px solid gray; outline: none; border-radius: 10px;">
+                                </div> -->
+
+                                <!-- ==================== دو اینپوت تاریخ ==================== -->
+                                <div class="date-inputs-container">
+
+                                    <!-- تاریخ ورود -->
+                                    <div class="input-group-wrapper" id="checkin-group">
+                                        <label class="input-label">
+                <i class="fas fa-sign-in-alt ms-1" style="color: #22c55e; font-size: 0.8rem;"></i>
+                تاریخ ورود
+            </label>
+                                        <div class="date-input-wrapper" id="checkin-trigger">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span class="date-display" id="checkin-display">انتخاب تاریخ</span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="calendar-popup" id="checkin-popup"></div>
+                                    </div>
+
+                                    <!-- تاریخ خروج -->
+                                    <div class="input-group-wrapper" id="checkout-group">
+                                        <label class="input-label">
+                <i class="fas fa-sign-out-alt ms-1" style="color: #ef4444; font-size: 0.8rem;"></i>
+                تاریخ خروج
+            </label>
+                                        <div class="date-input-wrapper" id="checkout-trigger">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span class="date-display" id="checkout-display">انتخاب تاریخ</span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="calendar-popup" id="checkout-popup"></div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Overlay -->
+                                <div class="calendar-overlay" id="calendar-overlay"></div>
+
+
+                            </div>
+
+                            <div class="row mt-4">
+                                <select class="form-select text-muted form-select-user-number" aria-label="Default select example">
+                                    <option selected><i class="fas fa-user text-muted"></i>تعداد نفرات</option>
+                                    <option value="1">1 نفر</option>
+                                    <option value="2">2 نفر</option>
+                                    <option value="3">3 نفر</option>
+                                </select>
+                            </div>
+
+                            <div class="row mt-1">
+                                <p class="text-muted price-children-text">کودکان تا زیر 3 سال در صورتحساب لحاظ نمی‌گردند.</p>
+                            </div>
+
+                            <div class="row my-4">
+                                <a href="#" class="btn btn-submit-request">ثبت درخواست (رایگان)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Accommodation price -->
+
+            <!-- Start Other similar accommodations -->
+            <section class="other-similar-accommodations">
+
+                <div class="row">
+
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="d-flex flex-column">
+                            <strong class="text-black text-premium-accommodations">سایر اقامتگاه‌های مشابه</strong>
+                        </div>
+                    </div>
+
+                    <div class="owl-carousel owl-theme card-carousel-all-same">
+
+                        <div class="col mb-4 d-flex justify-content-center
+d-flex justify-content-center
+d-flex justify-content-center
+d-flex justify-content-center">
+                            <div class="card card-cursor-pointer" style="width: 15rem; border-radius: 18px;">
+                                <div class="over-image">
+
+                                    <span class="text-reserv text-center text-black bg-white tags-premium-accommodations"><i class="fas fa-regular fa-star" style="color: rgb(255, 212, 59); margin-left: 5px;"></i>ممتاز</span
+                >
+
+                <span style="background-color: rgb(255, 212, 59);"
+                  class="text-reserv text-center text-black immediate-reservation-text-premium-accommodations tags-premium-accommodations instant-reservation-tags-premium-accommodations"
+                  ><i class="fas fa-light fa-bolt" style="color: black; margin-left: 5px;"></i>رزرو فوری</span
+                >
+
+                <div class="price-text-excellent-accommodations">
+                  <div class="">
+                    <strong class="price-kolbeh-shomal previous-price-excellent-accommodations"
+                      >2.400.000 تومان
+                      <span class="discount-amount discount-amount-excellent-accommodations">39%</span></strong>
+                                </div>
+
+                                <div class="">
+                                    <strong class="price-kolbeh-shomal new-price-excellent-accommodations">2.400.000 تومان
+                     </strong
+                    >
+                  </div>
+                </div>
+
+              </div>
+              <img
+                src="images&icons/7e2d5e7d-.png"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                
+
+                <div class="row">
+                  <p class="name-colbeh">
+                    <strong class="title-card-premium-accommodations">رزور ویلا در خط اول ساحل رودسر</strong>
+                                    </p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="section-row-nazar" style="font-size: 10px;">
+                                        <div>
+                                            <span class="color-gray-custom">2 خوابه: 75 متر، تا 8 مهمان</span
+                  >
+                  <i class="fas fa-star star-icon"></i>
+                      <strong>5</strong
+                      ><span class="color-gray-custom"> (10 نظر)</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-4 d-flex justify-content-center
+d-flex justify-content-center
+d-flex justify-content-center
+d-flex justify-content-center">
+                        <div class="card card-cursor-pointer" style="width: 15rem; border-radius: 18px;">
+                            <div class="over-image">
+
+                                <span class="text-reserv text-center text-black bg-white tags-premium-accommodations"><i class="fas fa-regular fa-star" style="color: rgb(255, 212, 59); margin-left: 5px;"></i>ممتاز</span
+                >
+
+                <span style="background-color: rgb(255, 212, 59);"
+                  class="text-reserv text-center text-black immediate-reservation-text-premium-accommodations tags-premium-accommodations instant-reservation-tags-premium-accommodations"
+                  ><i class="fas fa-light fa-bolt" style="color: black; margin-left: 5px;"></i>رزرو فوری</span
+                >
+
+                <div class="price-text-excellent-accommodations">
+                  <div class="">
+                    <strong class="price-kolbeh-shomal previous-price-excellent-accommodations"
+                      >2.400.000 تومان
+                      <span class="discount-amount discount-amount-excellent-accommodations">39%</span></strong>
+                            </div>
+
+                            <div class="">
+                                <strong class="price-kolbeh-shomal new-price-excellent-accommodations">2.400.000 تومان
+                     </strong
+                    >
+                  </div>
+                </div>
+
+              </div>
+              <img
+                src="images&icons/7e2d5e7d-.png"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                
+
+                <div class="row">
+                  <p class="name-colbeh">
+                    <strong class="title-card-premium-accommodations">رزور ویلا در خط اول ساحل رودسر</strong>
+                                </p>
+                            </div>
+
+                            <div class="row">
+                                <div class="section-row-nazar" style="font-size: 10px;">
+                                    <div>
+                                        <span class="color-gray-custom">2 خوابه: 75 متر، تا 8 مهمان</span
+                  >
+                  <i class="fas fa-star star-icon"></i>
+                      <strong>5</strong
+                      ><span class="color-gray-custom"> (10 نظر)</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4 d-flex justify-content-center
+d-flex justify-content-center
+d-flex justify-content-center
+d-flex justify-content-center">
+                    <div class="card card-cursor-pointer" style="width: 15rem; border-radius: 18px;">
+                        <div class="over-image">
+
+                            <span class="text-reserv text-center text-black bg-white tags-premium-accommodations"><i class="fas fa-regular fa-star" style="color: rgb(255, 212, 59); margin-left: 5px;"></i>ممتاز</span
+                >
+
+                <span style="background-color: rgb(255, 212, 59);"
+                  class="text-reserv text-center text-black immediate-reservation-text-premium-accommodations tags-premium-accommodations instant-reservation-tags-premium-accommodations"
+                  ><i class="fas fa-light fa-bolt" style="color: black; margin-left: 5px;"></i>رزرو فوری</span
+                >
+
+                <div class="price-text-excellent-accommodations">
+                  <div class="">
+                    <strong class="price-kolbeh-shomal previous-price-excellent-accommodations"
+                      >2.400.000 تومان
+                      <span class="discount-amount discount-amount-excellent-accommodations">39%</span></strong>
+                        </div>
+
+                        <div class="">
+                            <strong class="price-kolbeh-shomal new-price-excellent-accommodations">2.400.000 تومان
+                     </strong
+                    >
+                  </div>
+                </div>
+
+              </div>
+              <img
+                src="images&icons/7e2d5e7d-.png"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                
+
+                <div class="row">
+                  <p class="name-colbeh">
+                    <strong class="title-card-premium-accommodations">رزور ویلا در خط اول ساحل رودسر</strong>
+                            </p>
+                        </div>
+
+                        <div class="row">
+                            <div class="section-row-nazar" style="font-size: 10px;">
+                                <div>
+                                    <span class="color-gray-custom">2 خوابه: 75 متر، تا 8 مهمان</span
+                  >
+                  <i class="fas fa-star star-icon"></i>
+                      <strong>5</strong
+                      ><span class="color-gray-custom"> (10 نظر)</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="col mb-4 d-flex justify-content-center
+d-flex justify-content-center
+d-flex justify-content-center
+d-flex justify-content-center">
+            <div class="card card-cursor-pointer" style="width: 15rem; border-radius: 18px;">
+                <div class="over-image">
+
+                    <span class="text-reserv text-center text-black bg-white tags-premium-accommodations"><i class="fas fa-regular fa-star" style="color: rgb(255, 212, 59); margin-left: 5px;"></i>ممتاز</span
+                >
+
+                <span style="background-color: rgb(255, 212, 59);"
+                  class="text-reserv text-center text-black immediate-reservation-text-premium-accommodations tags-premium-accommodations instant-reservation-tags-premium-accommodations"
+                  ><i class="fas fa-light fa-bolt" style="color: black; margin-left: 5px;"></i>رزرو فوری</span
+                >
+
+                <div class="price-text-excellent-accommodations">
+                  <div class="">
+                    <strong class="price-kolbeh-shomal previous-price-excellent-accommodations"
+                      >2.400.000 تومان
+                      <span class="discount-amount discount-amount-excellent-accommodations">39%</span></strong>
+                </div>
+
+                <div class="">
+                    <strong class="price-kolbeh-shomal new-price-excellent-accommodations">2.400.000 تومان
+                     </strong
+                    >
+                  </div>
+                </div>
+
+              </div>
+              <img
+                src="images&icons/7e2d5e7d-.png"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                
+
+                <div class="row">
+                  <p class="name-colbeh">
+                    <strong class="title-card-premium-accommodations">رزور ویلا در خط اول ساحل رودسر</strong>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="section-row-nazar" style="font-size: 10px;">
+                        <div>
+                            <span class="color-gray-custom">2 خوابه: 75 متر، تا 8 مهمان</span
+                  >
+                  <i class="fas fa-star star-icon"></i>
+                      <strong>5</strong
+                      ><span class="color-gray-custom"> (10 نظر)</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="col mb-4 d-flex justify-content-center
+d-flex justify-content-center
+d-flex justify-content-center
+d-flex justify-content-center">
+            <div class="card card-cursor-pointer" style="width: 15rem; border-radius: 18px;">
+                <div class="over-image">
+
+                    <span class="text-reserv text-center text-black bg-white tags-premium-accommodations"><i class="fas fa-regular fa-star" style="color: rgb(255, 212, 59); margin-left: 5px;"></i>ممتاز</span
+                >
+
+                <span style="background-color: rgb(255, 212, 59);"
+                  class="text-reserv text-center text-black immediate-reservation-text-premium-accommodations tags-premium-accommodations instant-reservation-tags-premium-accommodations"
+                  ><i class="fas fa-light fa-bolt" style="color: black; margin-left: 5px;"></i>رزرو فوری</span
+                >
+
+                <div class="price-text-excellent-accommodations">
+                  <div class="">
+                    <strong class="price-kolbeh-shomal previous-price-excellent-accommodations"
+                      >2.400.000 تومان
+                      <span class="discount-amount discount-amount-excellent-accommodations">39%</span></strong>
+                </div>
+
+                <div class="">
+                    <strong class="price-kolbeh-shomal new-price-excellent-accommodations">2.400.000 تومان
+                     </strong
+                    >
+                  </div>
+                </div>
+
+              </div>
+              <img
+                src="images&icons/7e2d5e7d-.png"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                
+
+                <div class="row">
+                  <p class="name-colbeh">
+                    <strong class="title-card-premium-accommodations">رزور ویلا در خط اول ساحل رودسر</strong>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="section-row-nazar" style="font-size: 10px;">
+                        <div>
+                            <span class="color-gray-custom">2 خوابه: 75 متر، تا 8 مهمان</span
+                  >
+                  <i class="fas fa-star star-icon"></i>
+                      <strong>5</strong
+                      ><span class="color-gray-custom"> (10 نظر)</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="col mb-4 d-flex justify-content-center
+d-flex justify-content-center
+d-flex justify-content-center
+d-flex justify-content-center">
+            <div class="card card-cursor-pointer" style="width: 15rem; border-radius: 18px;">
+                <div class="over-image">
+
+                    <span class="text-reserv text-center text-black bg-white tags-premium-accommodations"><i class="fas fa-regular fa-star" style="color: rgb(255, 212, 59); margin-left: 5px;"></i>ممتاز</span
+                >
+
+                <span style="background-color: rgb(255, 212, 59);"
+                  class="text-reserv text-center text-black immediate-reservation-text-premium-accommodations tags-premium-accommodations instant-reservation-tags-premium-accommodations"
+                  ><i class="fas fa-light fa-bolt" style="color: black; margin-left: 5px;"></i>رزرو فوری</span
+                >
+
+                <div class="price-text-excellent-accommodations">
+                  <div class="">
+                    <strong class="price-kolbeh-shomal previous-price-excellent-accommodations"
+                      >2.400.000 تومان
+                      <span class="discount-amount discount-amount-excellent-accommodations">39%</span></strong>
+                </div>
+
+                <div class="">
+                    <strong class="price-kolbeh-shomal new-price-excellent-accommodations">2.400.000 تومان
+                     </strong
+                    >
+                  </div>
+                </div>
+
+              </div>
+              <img
+                src="images&icons/7e2d5e7d-.png"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                
+
+                <div class="row">
+                  <p class="name-colbeh">
+                    <strong class="title-card-premium-accommodations">رزور ویلا در خط اول ساحل رودسر</strong>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="section-row-nazar" style="font-size: 10px;">
+                        <div>
+                            <span class="color-gray-custom">2 خوابه: 75 متر، تا 8 مهمان</span
+                  >
+                  <i class="fas fa-star star-icon"></i>
+                      <strong>5</strong
+                      ><span class="color-gray-custom"> (10 نظر)</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="col mb-4 d-flex justify-content-center
+d-flex justify-content-center
+d-flex justify-content-center
+d-flex justify-content-center">
+            <div class="card card-cursor-pointer" style="width: 15rem; border-radius: 18px;">
+                <div class="over-image">
+
+                    <span class="text-reserv text-center text-black bg-white tags-premium-accommodations"><i class="fas fa-regular fa-star" style="color: rgb(255, 212, 59); margin-left: 5px;"></i>ممتاز</span
+                >
+
+                <span style="background-color: rgb(255, 212, 59);"
+                  class="text-reserv text-center text-black immediate-reservation-text-premium-accommodations tags-premium-accommodations instant-reservation-tags-premium-accommodations"
+                  ><i class="fas fa-light fa-bolt" style="color: black; margin-left: 5px;"></i>رزرو فوری</span
+                >
+
+                <div class="price-text-excellent-accommodations">
+                  <div class="">
+                    <strong class="price-kolbeh-shomal previous-price-excellent-accommodations"
+                      >2.400.000 تومان
+                      <span class="discount-amount discount-amount-excellent-accommodations">39%</span></strong>
+                </div>
+
+                <div class="">
+                    <strong class="price-kolbeh-shomal new-price-excellent-accommodations">2.400.000 تومان
+                     </strong
+                    >
+                  </div>
+                </div>
+
+              </div>
+              <img
+                src="images&icons/7e2d5e7d-.png"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                
+
+                <div class="row">
+                  <p class="name-colbeh">
+                    <strong class="title-card-premium-accommodations">رزور ویلا در خط اول ساحل رودسر</strong>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="section-row-nazar" style="font-size: 10px;">
+                        <div>
+                            <span class="color-gray-custom">2 خوابه: 75 متر، تا 8 مهمان</span
+                  >
+                  <i class="fas fa-star star-icon"></i>
+                      <strong>5</strong
+                      ><span class="color-gray-custom"> (10 نظر)</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+
+        </section>
+        <!-- End Other similar accommodations -->
+
+        <!-- Start Some Explain -->
+        <section>
+            <div class="row mt-5">
+                <strong>اجاره ویلا آنلاین و مطمئن</strong>
+                <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                    باشد لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                    ابزارهای کاربردی می باشد لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                    متنوع با هدف بهبود ابزارهای کاربردی می باشد لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                    مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                </p>
+            </div>
+        </section>
+        <!-- End Some Explain -->
+
+        </div>
+    </main>
+
+    <footer class="background-footer footer-big-size">
+        <div class="container-md">
+
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-12 col-lg-3 mt-5">
+                    <div class="row"><strong><p class="d-flex justify-content-center">لینک های دسترسی</p></strong></div>
+                    <div class="row">
+                        <div class="col">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item d-flex justify-content-center align-items-center">
+                                    <a class="nav-link text-primary access-link-text footer-items-hover-animation" aria-current="page" href="#">چگونه مهمان شوم</a
+                    >
+                  </li>
+                  <li class="nav-item d-flex justify-content-center align-items-center">
+                    <a class="nav-link text-primary access-link-text footer-items-hover-animation" href="#">میزبان شوید</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center align-items-center">
+                                    <a class="nav-link text-primary access-link-text footer-items-hover-animation" href="#">شیوه های پرداخت</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center align-items-center">
+                                    <a class="nav-link text-primary access-link-text footer-items-hover-animation" href="#">پرسش های متداول</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center align-items-center">
+                                    <a class="nav-link text-primary access-link-text footer-items-hover-animation" href="#">قوانین و مقررات</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item d-flex justify-content-center align-items-center">
+                                    <a class="nav-link text-primary access-link-text footer-items-hover-animation" aria-current="page" href="#">راهنمای رزور اقامتگاه</a
+                    >
+                  </li>
+                  <li class="nav-item d-flex justify-content-center align-items-center">
+                    <a class="nav-link text-primary access-link-text footer-items-hover-animation" href="#">میزبان شوید</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center align-items-center">
+                                    <a class="nav-link text-primary access-link-text footer-items-hover-animation" href="#">شیوه های پرداخت</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center align-items-center">
+                                    <a class="nav-link text-primary access-link-text footer-items-hover-animation" href="#">پرسش های متداول</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center align-items-center">
+                                    <a class="nav-link text-primary access-link-text footer-items-hover-animation" href="#">قوانین و مقررات</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mt-5">
+                    <div class="row"><strong><p class="d-flex justify-content-center">نصب اپلیکیشن جاویلا</p></strong></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row mb-3 d-flex justify-content-center align-items-center">
+                                <img src="images&icons/Bazzar.png" class="download-app footer-items-hover-animation" alt="">
+                            </div>
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <img src="images&icons/Bazzar.png" class="download-app footer-items-hover-animation" alt="">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row mb-3 d-flex justify-content-center align-items-center">
+                                <img src="images&icons/Bazzar.png" class="download-app footer-items-hover-animation" alt="">
+                            </div>
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <img src="images&icons/Bazzar.png" class="download-app footer-items-hover-animation" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mt-5">
+                    <div class="row"><strong><p class="d-flex justify-content-center">با ما همراه شوید</p></strong></div>
+                    <div class="row d-flex justify-content-center">
+                        <span class="insta-social-media social-media footer-items-hover-animation mb-3 d-flex justify-content-center align-items-center text-white">1M <img src="images&icons/instagram-brands-solid-full.svg" width="25px" alt=""></span>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <!-- <i class="fas fa-telegram" style="width: 15px;">تلگرام</i> -->
+                        <span class="tel-social-media social-media footer-items-hover-animation d-flex justify-content-center align-items-center text-white">10K <img src="images&icons/telegram-brands-solid-full.svg" width="25px" alt=""></span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 mt-5">
+                    <div class="row"><strong><p class="d-flex justify-content-center">با خیال راحت به جاویلا اعتماد کنید</p></strong></div>
+                    <div class="row mb-3">
+                        <div class="col d-flex justify-content-center align-items-center d-flex justify-content-center align-items-center">
+                            <img src="images&icons/enamad.png" class="licenses footer-items-hover-animation" alt="" />
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center d-flex justify-content-center align-items-center">
+                            <img src="images&icons/samandehi.png" class="licenses footer-items-hover-animation" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col d-flex justify-content-center align-items-center d-flex justify-content-center align-items-center">
+                            <img src="images&icons/logo-etehadiyeh.png" class="licenses footer-items-hover-animation" alt="" />
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center d-flex justify-content-center align-items-center">
+                            <img src="images&icons/enamad.png" class="licenses footer-items-hover-animation" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 footer-rental-container">
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+                <span class="footer-rental-text footer-items-hover-animation">اجاره ویلا شمال</span>
+            </div>
+
+            <div class="row">
+                <div class="copy-right">
+                    <span>کلیه حقوق متعلق به <strong class="business-name">جاویلا</strong> می‌باشد؛ هرگونه تخلف پیگرد قانونی دارد.</span>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script> -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/loginSignup.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
