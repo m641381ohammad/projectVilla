@@ -1,1 +1,0 @@
-const city = citySearchInput?.value || "";
